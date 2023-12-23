@@ -84,7 +84,7 @@ ScrollTrigger.matchMedia({
       opacity:0,
       ease: "power1.inOut",
       scrollTrigger: {
-        trigger: ".bg",
+        trigger: "body",
         start: "45% 45%",
         end: "bottom 45%",
         scrub: 0.5,
