@@ -87,7 +87,6 @@ ScrollTrigger.matchMedia({
         start: "center 45%",
         end: "60% 45%",
         scrub: 1,
-        markers:true
       },
     });
   },
