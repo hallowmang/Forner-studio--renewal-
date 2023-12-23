@@ -85,10 +85,11 @@ ScrollTrigger.matchMedia({
       ease: "power1.inOut",
       scrollTrigger: {
         trigger: ".bg",
-        start: "center 45%",
+        start: "45% 45%",
         end: "bottom 45%",
         scrub: 0.5,
         toggleActions:"start none none reverse",
+        markers:true
       },
     });
   },
