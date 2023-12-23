@@ -76,6 +76,7 @@ ScrollTrigger.matchMedia({
       duration: 1,
       ease: "expo.inOut",
       onComplete: function () {
+        $('.bg').hide();
         lenis.start(); //.bg가 다 끝나고 스크롤 시작
       },
     },"mC");
