@@ -80,15 +80,13 @@ ScrollTrigger.matchMedia({
       },
     },"mC");
     gsap.to(".m-logo-text", {
-      scale:0,
       opacity:0,
       ease: "power1.inOut",
       scrollTrigger: {
         trigger: "body",
-        start: "45% 45%",
-        end: "bottom 45%",
-        scrub: 0.5,
-        toggleActions:"start none none reverse",
+        start: "center 45%",
+        end: "60% 45%",
+        scrub: 1,
         markers:true
       },
     });
