@@ -65,7 +65,7 @@ ScrollTrigger.matchMedia({
       ease: "expo.inOut",
     },"mB")
     .to(".m-logo-text",{
-      y:-300,
+      y:-200,
       duration: 1,
       ease: "expo.inOut",
     },"mC")
@@ -88,7 +88,6 @@ ScrollTrigger.matchMedia({
         start: "center 45%",
         end: "bottom 45%",
         scrub: 0.5,
-        markers:true
       },
     });
   },
