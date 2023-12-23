@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BYREDO Custom</title>
+  <!-- <link rel="shortcut icon" href="https://forner.studio/favicon-darkmode.svg" type="image/x-icon"> -->
+  <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon">
+
+  <!-- CSS파일 -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- GSAP 라이브러리 설정 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+  <!-- 제이쿼리 -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <!-- Lenis 설정 -->
+  <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.26/bundled/lenis.min.js"></script> 
+
+  <!-- splitting -->
+  <script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
+
+
+  <script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
+
+  <!-- JS 연결 -->
+  <script defer src="./assets/js/main.js"></script>
+
+</head>
+
+<body>
+  <div class="bg">
+    <div class="logo-text">
+      <span class="by">by</span>
+      <span class="r">r</span>
+      <span class="ed">ed</span>
+      <span class="o">o</span>
+    </div>
+    
+    <div class="m-logo-text">
+      <span class="byr">byr</span>
+      <span class="edo">edo</span>
+    </div>
+      
+    <div class="text">
+      <span class="text-top">CONSIDERED CREATIVE</span>
+      <span class="text-bottom">for Elevated Brands.</span>
+    </div>
+  </div>
+
+  
+  <div class="wrapper">
+  <!-- 헤더 -->
+    <header>
+      <div class="inner">
+        <svg data-v-1324fae2="" preserveAspectRatio="xMidYMin" viewBox="0 0 1832 268" fill="none"
+          xmlns="http://www.w3.org/2000/svg" class="svg">
+          <g data-v-1324fae2="" data-svg-origin="0 0" transform="matrix(1,0,0,1,0,0)">
+            <path data-v-1324fae2="" d="M229.847 5V33.5106H32.2986V121.236H224.529V148.625H32.2986V262.619H0V5H229.847Z">
+            </path>
+            <path data-v-1324fae2=""
+              d="M367.63 259.081C348.651 253.136 332.257 244.46 318.547 233.008C304.838 221.555 294.104 207.518 286.395 190.851C278.686 174.183 274.832 155.225 274.832 133.927C274.832 112.629 278.735 93.6709 286.493 77.0031C294.25 60.3353 305.033 46.3481 318.791 34.9438C332.55 23.5396 348.943 14.9133 367.971 8.96745C386.95 2.9729 407.686 0 430.129 0C452.572 0 473.308 2.9729 492.287 8.91871C511.266 14.8645 527.708 23.5396 541.613 34.8951C555.518 46.2993 566.349 60.2866 574.204 76.9544C582.011 93.6221 585.914 112.58 585.914 133.878C585.914 155.176 582.011 174.134 574.253 190.802C566.496 207.47 555.664 221.506 541.857 232.959C528.001 244.412 511.559 253.087 492.531 259.033C473.454 264.978 452.67 267.951 430.08 267.951C407.442 268 386.609 265.027 367.63 259.081ZM482.383 232.276C497.702 227.062 510.632 219.751 521.268 210.345C531.855 200.939 539.954 189.73 545.516 176.766C551.078 163.802 553.859 149.474 553.859 133.878C553.859 118.38 551.078 104.149 545.516 91.2341C539.954 78.319 531.855 67.2071 521.268 57.9473C510.68 48.6387 497.702 41.4257 482.383 36.2597C467.063 31.0937 449.645 28.5106 430.129 28.5106C410.613 28.5106 393.244 31.0937 377.973 36.2597C362.702 41.4257 349.821 48.6387 339.283 57.9473C328.744 67.2559 320.694 78.319 315.132 91.2341C309.57 104.149 306.789 118.38 306.789 133.878C306.789 149.522 309.57 163.802 315.132 176.766C320.694 189.73 328.744 200.939 339.283 210.345C349.821 219.751 362.751 227.062 377.973 232.276C393.244 237.491 410.613 240.074 430.129 240.074C449.645 240.123 467.063 237.491 482.383 232.276Z">
+            </path>
+            <path data-v-1324fae2=""
+              d="M804.587 5C819.76 5 833.226 6.60829 844.984 9.77614C856.743 12.944 866.598 17.6714 874.6 23.8609C882.601 30.0991 888.651 37.8482 892.7 47.0593C896.799 56.2704 898.848 66.8949 898.848 78.9327C898.848 97.6474 893.481 112.853 882.747 124.55C872.014 136.295 855.572 147.553 789.218 147.553L906.362 262.619H865.476L750.918 152.183H667.488V262.619H635.336V5H804.587ZM855.23 112.804C865.671 105.055 870.892 94.0409 870.892 79.7612C870.892 72.4995 869.574 66.0176 866.988 60.3155C864.403 54.6134 860.451 49.7398 855.181 45.6947C849.912 41.6496 843.326 38.5792 835.47 36.4348C827.615 34.2904 814.54 33.2182 803.952 33.2182H667.537V124.452H803.952C825.127 124.452 844.789 120.553 855.23 112.804Z"
+              data-svg-origin="635.3359985351562 5" transform="matrix(1,0,0,1,0,0)">
+            </path>
+          </g>
+          <g data-v-1324fae2="" transform="matrix(1,0,0,1,-15,0)" data-svg-origin="955.0079956054688 5">
+            <g data-v-1324fae2="" data-svg-origin="955.0079956054688 5" transform="matrix(1,0,0,1,0,0)">
+              <path data-v-1324fae2=""
+                d="M990.575 5L1193.34 220.121V5H1224.33V262.619H1193L985.989 43.0629V262.619H955.008V5H990.575Z">
+              </path>
+              <path data-v-1324fae2=""
+                d="M1523.31 5V33.5106H1325.81V121.236H1517.99V148.625H1325.81V234.742H1527.55V262.619H1293.46V5H1523.31Z">
+              </path>
+            </g>
+            <path data-v-1324fae2=""
+              d="M1746.28 5C1761.45 5 1774.96 6.60829 1786.67 9.77614C1798.43 12.944 1808.29 17.6714 1816.29 23.8609C1824.29 30.0991 1830.34 37.8482 1834.39 47.0593C1838.49 56.2704 1840.49 66.8949 1840.49 78.9327C1840.49 97.6474 1835.12 112.853 1824.44 124.55C1813.7 136.295 1797.26 147.553 1730.91 147.553L1848.05 262.619H1807.17L1692.61 152.183H1609.18V262.619H1577.03V5H1746.28ZM1796.87 112.804C1807.31 105.055 1812.53 94.0409 1812.53 79.7612C1812.53 72.4995 1811.21 66.0176 1808.63 60.3155C1806.04 54.6134 1802.09 49.7398 1796.82 45.6947C1791.55 41.6496 1784.97 38.5792 1777.11 36.4348C1769.21 34.2904 1756.18 33.2182 1745.59 33.2182H1609.18V124.452H1745.59C1766.77 124.452 1786.48 120.553 1796.87 112.804Z">
+            </path>
+          </g>
+        </svg>
+        
+      </div>
+
+      <figure class="video-wrap">
+        <video muted preload="auto" playsinline="true" autoplay="true" loop="loop" class="video">
+          <source src="./assets/videos/visual-video.mp4">
+        </video>
+      </figure>
+
+      <!-- <div class="title-wrap">
+        <h1>CONSIDERED CREATIVE</h1>
+        <h2>for Elevated Brands.</h2>
+      </div> -->
+    </header>
+
+    <nav class="nav">
+      <div class="nav-group">
+        <a href="" class="logo-wrap">
+          <div class="logo">
+            <img src="./assets/images/logo.svg" alt="logo">
+            <!-- <svg data-v-3312c4b8="" viewBox="0 0 206 30" preserveAspectRatio="" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <g data-v-3312c4b8="">
+                <path data-v-3312c4b8=""
+                  d="M40.981 29.0016C38.8654 28.3361 37.038 27.365 35.5098 26.0829C33.9815 24.8009 32.785 23.2297 31.9257 21.3639C31.0664 19.4981 30.6367 17.3759 30.6367 14.9918C30.6367 12.6077 31.0718 10.4855 31.9366 8.61975C32.8013 6.75396 34.0032 5.18822 35.5369 3.91162C37.0706 2.63503 38.898 1.66939 41.0191 1.00382C43.1347 0.332788 45.4462 0 47.948 0C50.4497 0 52.7612 0.332788 54.8768 0.998363C56.9924 1.66394 58.8253 2.63502 60.3753 3.90617C61.9253 5.18276 63.1327 6.7485 64.0083 8.6143C64.8785 10.4801 65.3136 12.6023 65.3136 14.9864C65.3136 17.3704 64.8785 19.4926 64.0137 21.3584C63.149 23.2242 61.9416 24.7954 60.4025 26.0775C58.8579 27.3595 57.0251 28.3306 54.904 28.9962C52.7775 29.6618 50.4606 29.9945 47.9425 29.9945C45.419 30 43.0967 29.6672 40.981 29.0016ZM53.7728 26.0011C55.4805 25.4174 56.9217 24.599 58.1074 23.5461C59.2875 22.4932 60.1904 21.2384 60.8104 19.7872C61.4304 18.3361 61.7404 16.7321 61.7404 14.9864C61.7404 13.2515 61.4304 11.6585 60.8104 10.2128C60.1904 8.76705 59.2875 7.52319 58.1074 6.48663C56.9272 5.44463 55.4805 4.63721 53.7728 4.05892C52.065 3.48063 50.1234 3.19149 47.948 3.19149C45.7725 3.19149 43.8363 3.48063 42.134 4.05892C40.4317 4.63721 38.9959 5.44463 37.8212 6.48663C36.6464 7.52864 35.7491 8.76705 35.129 10.2128C34.509 11.6585 34.199 13.2515 34.199 14.9864C34.199 16.7376 34.509 18.3361 35.129 19.7872C35.7491 21.2384 36.6464 22.4932 37.8212 23.5461C38.9959 24.599 40.4372 25.4174 42.134 26.0011C43.8363 26.5848 45.7725 26.874 47.948 26.874C50.1234 26.8794 52.065 26.5848 53.7728 26.0011Z"
+                  fill="#484036"></path>
+                <path data-v-3312c4b8=""
+                  d="M89.689 0.574219C91.3804 0.574219 92.8815 0.754251 94.1922 1.10886C95.5029 1.46347 96.6015 1.99266 97.4934 2.68551C98.3854 3.38382 99.0598 4.25125 99.5112 5.28235C99.968 6.31344 100.196 7.50275 100.196 8.85027C100.196 10.9452 99.5982 12.6473 98.4017 13.9566C97.2052 15.2714 95.3724 16.5317 87.9758 16.5317L101.034 29.4122H96.4764L83.7064 17.0499H74.4063V29.4122H70.8223V0.574219H89.689ZM95.3343 12.6419C96.4982 11.7744 97.0801 10.5415 97.0801 8.94301C97.0801 8.13014 96.9332 7.40455 96.645 6.76625C96.3567 6.12795 95.9162 5.5824 95.3288 5.12959C94.7415 4.67678 94.0073 4.33308 93.1316 4.09304C92.256 3.853 90.7984 3.73297 89.6183 3.73297H74.4118V13.9457H89.6183C91.9786 13.9457 94.1704 13.5093 95.3343 12.6419Z"
+                  fill="#484036"></path>
+                <path data-v-3312c4b8=""
+                  d="M194.66 0.574219C196.351 0.574219 197.858 0.754251 199.163 1.10886C200.474 1.46347 201.572 1.99266 202.464 2.68551C203.356 3.38382 204.03 4.25125 204.482 5.28235C204.939 6.31344 205.162 7.50275 205.162 8.85027C205.162 10.9452 204.563 12.6473 203.372 13.9566C202.176 15.2714 200.343 16.5317 192.946 16.5317L206.005 29.4122H201.447L188.677 17.0499H179.377V29.4122H175.793V0.574219H194.66ZM200.3 12.6419C201.463 11.7744 202.045 10.5415 202.045 8.94301C202.045 8.13014 201.899 7.40455 201.61 6.76625C201.322 6.12795 200.881 5.5824 200.294 5.12959C199.707 4.67678 198.973 4.33308 198.097 4.09304C197.216 3.853 195.764 3.73297 194.584 3.73297H179.377V13.9457H194.584C196.944 13.9457 199.141 13.5093 200.3 12.6419Z"
+                  fill="#484036" class="animated-letter"></path>
+                <path data-v-3312c4b8=""
+                  d="M110.422 0.574219L133.025 24.655V0.574219H136.478V29.4122H132.987L109.911 4.83499V29.4122H106.457V0.574219H110.422Z"
+                  fill="#484036" class="animated-letter"></path>
+                <path data-v-3312c4b8=""
+                  d="M169.805 0.574219V3.76571H147.789V13.5857H169.212V16.6517H147.789V26.2916H170.278V29.4122H144.184V0.574219H169.805Z"
+                  fill="#484036" class="animated-letter"></path>
+                <path data-v-3312c4b8=""
+                  d="M25.6215 0.574219V3.76571H3.60039V13.5857H25.0287V16.6517H3.60039V29.4122H0V0.574219H25.6215Z"
+                  fill="#484036"></path>
+              </g>
+              <defs data-v-3312c4b8=""></defs>
+            </svg> -->
+          </div>
+        </a>
+
+        <a href="" class="menu-wrap">
+          
+          <div class="menu-arrow">
+            <img src="./assets/images/menu-arrow.svg" alt="">
+          </div>
+          
+          <div class="menu">Menu</div>
+        </a>
+      </div>
+    </nav>
+    <!-- 메인 -->
+    <main>
+      <section class="sc-info">
+
+        <div class="text-group">
+          <span>Forner is a full-service studio</span>
+          <span>creating brands people love to look at,</span>
+        </div>
+
+        <div class="img-group">
+          <div class="img-box">
+            <img src="./assets/images/info22.jpg" alt="">
+          </div>
+          <div class="img-box">
+            <img src="./assets/images/info11.jpg" alt="">  
+          </div>
+        </div>
+
+        <div class="desc">
+          <p>listen to</p>
+          <span class="dash">
+            <span class="line"></span>
+          </span>
+          <p>and live with.</p>
+        </div>
+      </section>
+
+      <section class="sc-photos">
+        <div class="photo-group">
+          <div class="big-photo">
+            <img src="./assets/images/photo11.jpg" alt="">
+          </div>
+
+          <div class="photo-textgroup">
+            <div class="photo-textwrap">
+              <div class="photo-texttop">
+                <p>We bring</p>
+                <p>brands to life</p>
+              </div>
+              <div class="photo-textbottom">
+                <p>through</p>
+                <div class="rolltext-wrap">
+                  <span>Identity</span>
+                  <span>Strategy</span>
+                  <span>Collateral</span>
+                  <span>Packaging</span>
+                  <span>Websites</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="img-wrap" data-scroll-opacity>
+            <div class="img-block"></div>
+
+            <div class="img-box start-trigger">
+              <img src="./assets/images/photo22.jpg" alt="">
+            </div>
+          </div>
+          
+          <div class="img-wrap" data-scroll-opacity>
+            <div class="img-box video-box">
+              <video autoplay muted playsinline="true" loop="loop" class="video">
+                <source src="./assets/videos/photo-video2.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="img-block"></div>
+          </div>
+
+          <div class="img-wrap" data-scroll-opacity>
+            <div class="img-box two-photo">
+              <img src="./assets/images/photo33.jpg" alt="" class="left-img">
+              <img src="./assets/images/photo4.jpg" alt="" class="right-img">
+            </div>
+
+            <div class="img-block"></div>
+          </div>
+
+          <div class="img-wrap" data-scroll-opacity>
+            <div class="img-box street-photo">
+              <img src="./assets/images/photo55.webp" alt="">
+            </div>
+
+            <div class="img-block"></div>
+            
+          </div>
+
+          <div class="img-wrap" data-scroll-opacity>
+            <div class="img-box wally-photo">
+              <img src="./assets/images/photo66.webp" alt="">
+            </div>
+            
+            <div class="img-block"></div>
+            
+          </div>
+
+          <div class="img-wrap" data-scroll-opacity>
+            <div class="img-box baby-photo end-trigger">
+              <img src="./assets/images/photo77.webp" alt="">
+            </div>
+            
+            <div class="img-block"></div>
+            
+          </div>
+
+        </div>
+
+      </section>
+
+      <section class="sc-slide">
+
+        <span class="cursor">M</span>
+        <span class="cursor spell1">O</span>
+        <span class="cursor spell2">R</span>
+        <span class="cursor spell3">E</span>
+        <span class="cursor spell4">H</span>
+        <span class="cursor spell5">E</span>
+        <span class="cursor spell6">R</span>
+        <span class="cursor spell7">E</span>
+
+        <div class="inner">
+          <div class="slide-wrap">
+            <div class="slide-title">
+              <a href="">
+                <div class="name">
+                  Bal d'Afrique
+                </div>
+                <span class="title-num">1</span>
+              </a>
+              <a href="">
+                <div class="name">
+                  Mojave Ghost
+                </div>
+                <span class="title-num">2</span>
+              </a>
+              <a href="">
+                <div class="name">
+                  Gypsy Water
+                </div>
+                <span class="title-num">3</span>
+              </a>
+              <a href="">
+                <div class="name">
+                  Rose of No Man’s Land
+                </div>
+                <span class="title-num">4</span>
+              </a>
+              <a href="">
+                <div class="name">
+                  Blanche
+                </div>
+                <span class="title-num">5</span>
+              </a>
+            </div>
+
+            <div class="img-box">
+              <a href="">
+                <img src="./assets/images/soto2.jpg" alt="">
+              </a>
+              <a href="">
+                <img src="./assets/images/soundmint2.jpg" alt="">
+              </a>
+              <a href="">
+                <img src="./assets/images/causemedic2.jpg" alt="">
+              </a>
+              <a href="">
+                <img src="./assets/images/Rose of no man's land.jpg" alt="">
+              </a>
+              <a href="">
+                <img src="./assets/images/Blanche.jpg" alt="">
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- 태블릿에서 보이는 컨텐츠 -->
+      <section class="sc-contents-mo">
+        <div class="contents-inner">
+          <div class="content-group">
+            <a href="" class="content-link">
+              <div class="content-title">
+                <p>Bal d'Afrique</p>
+                <span class="title-num">1</span>
+              </div>
+              <div class="content-photo">
+                <div class="content-img-box">
+                  <img src="./assets/images/soto2.jpg" alt="">
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="content-group">
+            <a href="" class="content-link">
+              <div class="content-title">
+                <p>Mojave Ghost</p>
+                <span class="title-num">2</span>
+              </div>
+              <div class="content-photo">
+                <div class="content-img-box">
+                  <img src="./assets/images/soundmint2.jpg" alt="">
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="content-group">
+            <a href="" class="content-link">
+              <div class="content-title">
+                <p>Gypsy Water</p>
+                <span class="title-num">3</span>
+              </div>
+              <div class="content-photo">
+                <div class="content-img-box">
+                  <img src="./assets/images/causemedic2.jpg" alt="">
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="content-group">
+            <a href="" class="content-link">
+              <div class="content-title">
+                <p>Rose of No Man’s Land</p>
+                <span class="title-num">4</span>
+              </div>
+              <div class="content-photo">
+                <div class="content-img-box">
+                  <img src="./assets/images/Rose of no man's land.jpg" alt="">
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="content-group">
+            <a href="" class="content-link">
+              <div class="content-title">
+                <p>Blanche</p>
+                <span class="title-num">5</span>
+              </div>
+              <div class="content-photo">
+                <div class="content-img-box">
+                  <img src="./assets/images/Blanche.jpg" alt="">
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="sc-all">
+        <div class="inner">
+
+          <div class="all-title">
+            <a href="">
+              <div class="all-name">
+                View All Projects
+              </div>
+              <div class="all-count">
+                <span class="all-num">15</span>
+                <div class="all-arrow">
+                  <img src="./assets/images/arrow .svg" alt="">
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="all-project">
+            
+            <div class="all-img-group" data-scroll-opacity>
+              <div class="images">
+                <div class="img img-1">
+                  <img src="./assets/images/all1.jpg" alt="" id="main-img">
+                  <div class="hovered-img">
+                    <img src="./assets/images/all10.jpg" alt="">
+                  </div>
+                </div>
+                <div class="img img-1">
+                  <img src="./assets/images/all2.jpg" alt="" id="main-img">
+                  <div class="hovered-img">
+                    <img src="./assets/images/all25.jpg" alt="">
+                  </div>
+                </div>
+                <div class="img img-1">
+                  <img src="./assets/images/all3.png" alt="" id="main-img">
+                  <div class="hovered-img">
+                    <img src="./assets/images/all13.jpg" alt="">
+                  </div>
+                </div>
+                <div class="img img-1">
+                  <img src="./assets/images/all4.jpg" alt="" id="main-img">
+                  <div class="hovered-img">
+                    <img src="./assets/images/all14.jpg" alt="">
+                  </div>
+                </div>
+                <div class="img img-1">
+                  <img src="./assets/images/all5.jpg" alt="" id="main-img">
+                  <div class="hovered-img">
+                    <img src="./assets/images/all15.jpg" alt="">
+                  </div>
+                </div>
+                <div class="img img-1">
+                  <img src="./assets/images/all6.jpg" alt="" id="main-img">
+                  <div class="hovered-img">
+                    <img src="./assets/images/all16.jpg" alt="">
+                  </div>
+                </div>
+                <div class="img img-1">
+                  <img src="./assets/images/all7.jpg" alt="" id="main-img">
+                  <div class="hovered-img">
+                    <img src="./assets/images/all11.jpg" alt="">
+                  </div>
+                </div>
+                <div class="img img-1">
+                  <img src="./assets/images/all23.jpg" alt="" id="main-img">
+                  <div class="hovered-img">
+                    <img src="./assets/images/all24.jpg" alt="">
+                  </div>
+                </div>
+                <div class="img img-1">
+                  <img src="./assets/images/all11.jpg" alt="" id="main-img">
+                  <div class="hovered-img">
+                    <img src="./assets/images/all7.jpg" alt="">
+                  </div>
+                </div>
+                <div class="img img-1">
+                  <img src="./assets/images/all8.jpg" alt="" id="main-img">
+                  <div class="hovered-img">
+                    <img src="./assets/images/all17.jpg" alt="">
+                  </div>
+                </div>
+                <div class="img img-1">
+                  <img src="./assets/images/all9.jpg" alt="" id="main-img">
+                  <div class="hovered-img">
+                    <img src="./assets/images/all18.jpg" alt="">
+                  </div>
+                </div>
+                <div class="img img-1">
+                  <img src="./assets/images/all21.jpg" alt="" id="main-img">
+                  <div class="hovered-img">
+                    <img src="./assets/images/all22.jpg" alt="">
+                  </div>
+                </div>
+                <div class="img img-1">
+                  <img src="./assets/images/all19.jpg" alt="" id="main-img">
+                  <div class="hovered-img">
+                    <img src="./assets/images/all27.jpg" alt="">
+                  </div>
+                </div>
+                <div class="img img-1">
+                  <img src="./assets/images/all20.jpg" alt="" id="main-img">
+                  <div class="hovered-img">
+                    <img src="./assets/images/all4.jpg" alt="">
+                  </div>
+                </div>
+                <div class="img img-1">
+                  <img src="./assets/images/all17.jpg" alt="" id="main-img">
+                  <div class="hovered-img">
+                    <img src="./assets/images/all26.jpg" alt="">
+                  </div>
+                </div>
+              </div>
+
+              
+            </div>
+            
+          </div>
+
+
+        </div>
+      </section>
+
+    </main>
+
+
+    <!-- 푸터 -->
+    <footer class="footer">
+      <div class="footer-img">
+        <img src="./assets/images/footer2.jpg" alt="">
+      </div>
+
+      <div class="footer-bottom">
+        <div class="inner">
+
+          <div class="logo-wrap">
+            
+            <div class="contect-wrap">
+              <div class="contect">
+                <p class="text-top">
+                  If you have a potential project or <br>
+                  collaboration that you'd like
+                  <br>
+                  to discuss,
+                </p>
+                <p class="text-middle">
+                  please,
+                  <br>
+                  contact us
+                </p>
+                <a href="" class="email">
+                  <p>info@byredo.com</p>
+                </a>
+              </div>
+            </div>
+
+            <div class="footer-logo" data-splitting>
+              <span class="footer-logo-split">byredo</span>
+            </div>
+          </div>
+            
+          <div class="bottom-sns">
+            <a href="" class="behance">
+              <span class="split">behance</span>
+            </a>
+            <a href="" class="instagram"> 
+              <span class="split">instagram</span> 
+            </a>
+            <a href="" class="pinterest"> 
+              <span class="split">pinterest</span> 
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>

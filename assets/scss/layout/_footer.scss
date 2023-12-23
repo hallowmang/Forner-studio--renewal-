@@ -1,0 +1,184 @@
+.footer{
+  // width: 100%;height: 100%;
+  .footer-img{
+    img{
+      @include tablet{
+        width: 100%;
+        height: 75vh;
+        object-fit: cover;
+      }
+      @include mobile{
+        height: 55vh;
+      }
+    }
+  }
+  
+  
+  .footer-bottom{
+    height: 44.12vw;
+    padding: 2vw 0;
+    background: #ACB4B8;
+    @include desktop{
+      height: 70vh;
+    }
+    @include tablet{
+      height: 70vw;
+    }
+    @include mobile{
+      height: 50vh;
+    }
+    .inner{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 97%;
+      @include desktop{
+        height: 83%;
+      }
+      @include tablet{
+        height: 97%;
+      }
+      
+      .logo-wrap{
+        position: relative;
+        .contect-wrap{
+          position: absolute;
+          bottom: -450px;
+          left: 50%;
+          transform: translate(-50%, 0);
+          width: 50vw;
+          height: 60.3vw;
+          text-align: center;
+          background:#FAF5EB;
+          z-index: 1;
+          @include tablet{
+            bottom: -200px;
+            width: 60vw;
+            height: 50vh;
+          }
+          @include mobile{
+            bottom: -300px;
+            width: 90vw;
+            height: 50vh;
+          }
+          .contect{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 100%;
+            height: 100%;
+            padding: 1.5rem 0 1.5rem;
+            .text-top{
+              text-transform: uppercase;
+              color: #484036;
+              font-size: 1.04rem;
+              letter-spacing: .02em;
+              line-height: .975;
+              @include tablet{
+                font-size: 1.3rem;
+              }
+              @include mobile{
+                font-size: 2rem;
+              }
+            }
+            .text-middle{
+              font-family: $font-daily;
+              font-size: 1.5625rem;
+              letter-spacing: .011em;
+              line-height: 1.031;
+              color: #413B34;
+              @include tablet{
+                font-size: 1.8rem;
+              }
+              @include mobile{
+                font-size: 3rem;
+              }
+            }
+            .email{
+              display: flex;
+              justify-content: center;
+              text-transform: uppercase;
+              font-size: 1.82rem;
+              letter-spacing: -.01em;
+              line-height: 1.13;
+              color: #D5D5C4;
+              &:hover p::after{
+                transform: scaleX(1);
+                transform-origin: bottom left;
+              }
+              @include mobile{
+                font-size: 3rem;
+              }
+              p{
+                position: relative;
+                &::after{
+                  content: "";
+                  position: absolute;
+                  width: 100%;
+                  height: 4px;
+                  bottom: 0;
+                  left: 0;
+                  transform: scaleX(0);
+                  transform-origin:  bottom left;
+                  background-color: currentColor;
+                  transition: .4s;
+                }
+              }
+            }
+          }
+        }  
+        .footer-logo{
+          position: absolute;
+          width: 100%;
+          top: 0;
+          left: 50%;
+          transform: translateX(-50%);
+          font-family: $font-clash;
+          color: #ecece4;
+          font-size: 11rem;
+          text-align: center;
+          text-transform: uppercase;
+          line-height: 0.8;
+          letter-spacing: 0.3rem;
+          .footer-logo-split{
+            display: flex;
+            justify-content: center;
+            .char{
+            display: inline-block;              
+            opacity: 0;
+            transform: translateY(50%);
+            }
+          }
+        }
+      }
+
+      .bottom-sns{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-transform: uppercase;
+        font-size: 2vw;
+        color: #666E72;
+        @include desktop{
+          font-size: 3vw;
+        }
+        @include tablet{
+          font-size: 3vw;
+        }
+        }
+
+        .behance,
+        .instagram,
+        .pinterest{
+          overflow: hidden;
+          .split{
+            display: inline-block;
+            opacity: 0;
+            transform: translateY(100%);
+          }
+        }
+        
+      }
+    }
+  }
+
