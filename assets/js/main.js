@@ -73,8 +73,6 @@ ScrollTrigger.matchMedia({
       height: "0%",
       duration: 1,
       ease: "expo.inOut",
-      duration: 1,
-      ease: "expo.inOut",
       onComplete: function () {
         lenis.start(); //.bg가 다 끝나고 스크롤 시작
       },
@@ -173,8 +171,8 @@ ScrollTrigger.matchMedia({
       );
   },
 });
-
 /* introTl 끝 */
+
 /* 스크롤시 로고 투명도,y축 변경 */
 ScrollTrigger.matchMedia({
   "(max-width:1023px)": function () {
@@ -392,7 +390,6 @@ ScrollTrigger.matchMedia({
         trigger: "main .sc-slide .inner",
         start: "0% 0%",
         end: "100% 100%",
-        // markers:true,
         scrub: 1,
       },
     });
